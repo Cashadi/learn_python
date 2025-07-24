@@ -16,5 +16,17 @@
 
 
 #forloop(1) python
-for i in range(1,6):
-    print("Ini adalah perulangan ke -", i)
+# for i in range(1,6):
+#     print("Ini adalah perulangan ke -", i)
+
+#forloop(2) python
+# count=[1,2,3,4,5]
+# for number in count:
+#     print("Ini adalah element count : ", number)
+
+#forloop praktek
+for i in range(1,10):
+    if(i%2==0):
+        print("Angka genap",i)
+    else:
+        print("Angka ganjil",i)
