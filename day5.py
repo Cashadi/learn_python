@@ -8,8 +8,13 @@
 #      print("lebih kecil dari 5")
 
 #mid praktek
-angka=5
-if(angka%2==0):
-    print("angka termasuk bilangan genap")
-else:
-    print("angka termasuk bilangan ganjil")
+# angka=5
+# if(angka%2==0):
+#     print("angka termasuk bilangan genap")
+# else:
+#     print("angka termasuk bilangan ganjil")
+
+
+#forloop(1) python
+for i in range(1,6):
+    print("Ini adalah perulangan ke -", i)
