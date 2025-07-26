@@ -46,24 +46,24 @@ import matplotlib.pyplot as plt
 
 
 #menampilkan 5 data yang paling kecil
-# Baca file
-table = pd.read_csv("C:/Users/Pongo/Documents/csv/electric_vehicles_spec_2025.csv.csv")
-
-# Bersihkan data yang hilang
-table = table.dropna(subset=['model', 'battery_capacity_kWh'])
-
-# Ambil 5 data dengan kapasitas baterai terkecil
-bottom5 = table.nsmallest(5, 'battery_capacity_kWh')
-
-# Konversi model ke string
-x_label = bottom5['model'].astype(str)
-
-# Plot
-plt.figure(figsize=(10, 6))
-plt.bar(x_label, bottom5['battery_capacity_kWh'])
-plt.xticks(rotation=45)
-plt.xlabel("Model")
-plt.ylabel("Battery Capacity (kWh)")
-plt.title("Bottom 5 EV Models by Battery Capacity")
-plt.tight_layout()
-plt.show()
+# # Baca file
+# table = pd.read_csv("C:/Users/Pongo/Documents/csv/electric_vehicles_spec_2025.csv.csv")
+#
+# # Bersihkan data yang hilang
+# table = table.dropna(subset=['model', 'battery_capacity_kWh'])
+#
+# # Ambil 5 data dengan kapasitas baterai terkecil
+# bottom5 = table.nsmallest(5, 'battery_capacity_kWh')
+#
+# # Konversi model ke string
+# x_label = bottom5['model'].astype(str)
+#
+# # Plot
+# plt.figure(figsize=(10, 6))
+# plt.bar(x_label, bottom5['battery_capacity_kWh'])
+# plt.xticks(rotation=45)
+# plt.xlabel("Model")
+# plt.ylabel("Battery Capacity (kWh)")
+# plt.title("Bottom 5 EV Models by Battery Capacity")
+# plt.tight_layout()
+# plt.show()
